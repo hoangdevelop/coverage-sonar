@@ -1,10 +1,9 @@
 {
-  "name": "screwdriver-coverage-sonar",
+  "name": "screwdriver-coverage-sonar1",
   "version": "1.0.0",
   "description": "SonarQube implementation of the coverage-base class",
   "main": "index.js",
   "scripts": {
-    "pretest": "eslint .",
     "test": "nyc --report-dir ./artifacts/coverage --reporter=lcov mocha --recursive --timeout 4000 --retries 1 --exit --allow-uncaught true --color true",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -44,8 +43,9 @@
     "request": "^2.87.0",
     "request-promise-native": "^1.0.5",
     "screwdriver-coverage-base": "^1.0.5",
-    "uuid": "^3.2.1",
-    "screwdriver-logger": "^1.0.0"
+    "screwdriver-coverage-sonar": "^1.0.29",
+    "screwdriver-logger": "^1.0.0",
+    "uuid": "^3.2.1"
   },
   "release": {
     "debug": false,
